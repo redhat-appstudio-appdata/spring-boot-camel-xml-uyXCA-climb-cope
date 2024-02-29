@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: spring-boot-camel-xml
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hawtio-hawtio-tenant/spring-boot-camel-xml/spring-boot-camel-xml@sha256:5e1fac5379d9f00e858f8fcb278b3aea1fa6546e88b524db580d715f6a27f4f1
+        name: my-java-springboot
+        resources: {}
+status: {}
