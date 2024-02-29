@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: spring-boot-camel-xml
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads/hawtio-hawtio-tenant/spring-boot-camel-xml/spring-boot-camel-xml@sha256:5e1fac5379d9f00e858f8fcb278b3aea1fa6546e88b524db580d715f6a27f4f1
         name: my-java-springboot
         ports:
         - containerPort: 8081
